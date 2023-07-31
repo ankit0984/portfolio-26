@@ -1,0 +1,19 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #B968FF;
+    padding: 0.5rem 1rem;
+  }
+  .text-heliotrope {
+    color: #B968FF;
+    font: 200 1.0rem/1.0rem 'Trebuchet MS', Regular;
+  }
+  .heliotrope-text {
+    color: #B968FF;
+    font: 400 2.5rem/2.5rem 'bold', Segoe-UI;
+  }
+  .heliotrope{
+    color: #B968FF;
+    
+  }
