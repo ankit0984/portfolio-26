@@ -60,16 +60,16 @@ const Hero = () => {
         {/* Profile image (visible only in desktop view) */}
       <div className="hidden md:block ">
         <img
-          className="mt-4 md:mt-0 h-auto w-auto"
+          className="mt-4 md:mt-0 h-auto w-auto "
           src="images/snapchat.png" // Replace this with the path to your profile image
           alt="Profile"
         />
       </div>
 
       {/* Profile image (visible only in mobile view) */}
-      <div className="md:hidden w-full">
+      <div className="md:hidden w-0">
         <img
-          className="mt-4 h-full w-full md:hidden"
+          className="w-full rounded-full"
           src="images/snapchat.png" // Replace this with the path to your profile image
           alt="Profile"
         />
