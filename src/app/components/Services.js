@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { BsArrowUpRight } from "react-icons/bs";
 
@@ -11,11 +12,11 @@ const Card = () => {
       <div className="flex justify-center items-center">
       <div className="w-auto bg-[#B968FF] bg-opacity-20 rounded shadow-lg p-6 flex mb-4 ">
         <div className="mr-4 ">
-          <img
-            src='Images/screen.png'
-            className="h-12 w-12 text-gray-500"
+          <Image
+            src='/Images/screen.png'
+            height="42" width="42"
+            className=" text-gray-500"
             viewBox="0 0 20 20"
-            fill="currentColor"
             alt="/"
           />
             <path
@@ -38,11 +39,11 @@ const Card = () => {
     <div className="flex justify-center items-center py-6">
       <div className="w-auto bg-[#B968FF] bg-opacity-20 rounded shadow-lg p-6 flex ">
         <div className="mr-4 ">
-          <img
-            src='Images/smartphone.png'
-            className="h-12 w-12 text-gray-500"
+          <Image
+            src='/Images/smartphone.png'
+            height="40" width="40"
+            className=" text-gray-500"
             viewBox="0 0 20 20"
-            fill="currentColor"
             alt="/"
           />
             <path
@@ -65,11 +66,11 @@ const Card = () => {
     <div className="flex justify-center items-center py-4">
       <div className="w-auto bg-[#B968FF] bg-opacity-20 rounded shadow-lg p-6 flex ">
         <div className="mr-4 ">
-          <img
-            src='Images/brochure.png'
-            className="h-12 w-12 text-gray-500"
+          <Image
+            src='/Images/brochure.png'
+            height="40" width="40"
+            className=" text-gray-500"
             viewBox="0 0 20 20"
-            fill="currentColor"
             alt="/"
           />
             <path
