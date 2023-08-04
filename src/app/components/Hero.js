@@ -30,29 +30,29 @@ const Hero = () => {
                 aria-expanded="false"
               >
                 <span>Contact Me</span>
-                <Image height='20'width="20" src="/images/send.png" aria-hidden="true" alt="" />
+                <Image height='20'width="20" src="/Images/send.png" aria-hidden="true" alt="" />
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
               </button>
             </div>
             <div className='container flex gap-4 m-auto py-2 justify-center md:justify-start'>
               <a href='https://www.linkedin.com/in/aditya-dev-b48345217/' target='_blank' rel='noreferrer'>
                 <div className='h-6 w-6'>
-                  <Image src="/images/linkedin (4).png" alt="/" height="25" width="25"/>
+                  <Image src="/Images/linkedin (4).png" alt="/" height="25" width="25"/>
                 </div>
               </a>
               <a href='https://instagram.com/designerlive.tech?igshid=NGExMmI2YTkyZg==/' target='_blank' rel='noreferrer'>
                 <div className='h-6 w-6'>
-                  <Image src="/images/instagram (3).png" alt="/" height="25" width="25" />
+                  <Image src="/Images/instagram (3).png" alt="/" height="25" width="25" />
                 </div>
               </a>
               <a href='https://www.behance.net/onboarding/adobe/' target='_blank' rel='noreferrer'>
                 <div className='h-6 w-6'>
-                  <Image src="/images/behance.png" alt="/" height="25" width="25" />
+                  <Image src="/Images/behance.png" alt="/" height="25" width="25" />
                 </div>
               </a>
               <a href='https://dribbble.com/' target='_blank' rel='noreferrer'>
                 <div className='h-6 w-6'>
-                  <Image src="/images/dribble-big-logo.png" alt="/" height="25" width="25" />
+                  <Image src="/Images/dribble-big-logo.png" alt="/" height="25" width="25" />
                 </div>
               </a>
             </div>
@@ -61,7 +61,7 @@ const Hero = () => {
       <div className="hidden md:block ">
         <Image
           className="mt-4 md:mt-0"
-          src="/images/snapchat.png" // Replace this with the path to your profile image
+          src="/Images/snapchat.png" // Replace this with the path to your profile image
           alt="Profile"
           height="300" width="300"
         />
