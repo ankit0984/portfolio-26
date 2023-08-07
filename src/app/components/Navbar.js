@@ -14,8 +14,11 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
             <div className="flex items-center justify-center">
-              <a to="/" className="text-black font-semibold text-lg">
-                logo
+              <a to="/" className="text-black font-semibold">
+              <div>
+        <h1 class="ml-3 text-xl">Designerlive</h1>
+        <h2 class="ml-10 px-12 text-regular">.tech</h2>
+        </div>
               </a>
             </div>
             <div className="md:hidden">

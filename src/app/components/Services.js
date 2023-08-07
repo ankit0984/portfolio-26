@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { BsArrowUpRight } from "react-icons/bs";
 
-const Card = () => {
+export default function Card() {
   return (
     <div className=' h-screen bg-white'>
     <div className='flex flex-col items-center justify-center mt-8 py-8 p-4'>
@@ -93,4 +93,3 @@ const Card = () => {
   );
 };
 
-export default Card;

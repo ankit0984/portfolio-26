@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const Hero = () => {
+export default function Hero() {
   return (
     <>
     <div>
@@ -12,7 +12,7 @@ const Hero = () => {
             </p>
             <p className='py-2'>
               <span className='text-6xl font-bold'>I&apos;m </span>
-              <span className='text-6xl font-bold text-[#5651e5]'>Deva</span>
+              <span className='text-6xl font-bold text-[#5651e5]'>Aditya Dev</span>
             </p>
             <p className='py-1'>
               <span className='text-6xl font-bold text-[#5651e5]'>a </span>
@@ -84,4 +84,3 @@ const Hero = () => {
   )
 }
 
-export default Hero

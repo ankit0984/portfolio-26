@@ -20,13 +20,14 @@ import SwiperCore, {
 import ProjectItem from './ProjectItem'
 import './style.css'
 import Image from "next/image";
+import Contact from "./Contact";
 
 
 
 // install Swiper modules
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
-function Projects() {
+export default function Projects() {
   return (
     <>
       <div id='projects' className='md:h-screen'>
@@ -38,8 +39,8 @@ function Projects() {
           <div className='max-w-[1240px] mx-auto px-2 py-16'>
             <div className='grid md:grid-cols-2 gap-8'>
               <ProjectItem
-                title='Podcast App UI'
-                backgroundImg="/Images/podcast.png"
+                title='Yoga App UI'
+                backgroundImg="/Images/yoga-app.png"
                 projectUrl='/podcast'
                 tech='Adobe XD'
               />
@@ -51,8 +52,8 @@ function Projects() {
               />
 
               <ProjectItem
-                title='Crypto UI'
-                backgroundImg="/Images/android.png"
+                title='Coffee App UI'
+                backgroundImg="/Images/coffee.jpg"
                 projectUrl='/android'
                 tech='Adobe XD'
               />
@@ -157,13 +158,14 @@ function Projects() {
           </SwiperSlide>
         </Swiper>
         {/* end of card */}
+        <Contact />
       </div>
+      
 
     </>
   )
 }
 
-export default Projects
 
 
 
