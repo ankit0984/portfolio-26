@@ -15,10 +15,10 @@ const Navbar = () => {
           <div className="relative flex items-center justify-between h-16">
             <div className="flex items-center justify-center">
               <a to="/" className="text-black font-semibold">
-              <div>
-        <h1 class="ml-3 text-xl">Designerlive</h1>
-        <h2 class="ml-10 px-12 text-regular">.tech</h2>
-        </div>
+                <div>
+                  <h1 className="ml-3 text-xl">Designerlive</h1>
+                  <h2 className="ml-10 px-12 text-regular">.tech</h2>
+                </div>
               </a>
             </div>
             <div className="md:hidden">
@@ -43,13 +43,13 @@ const Navbar = () => {
                 Contact
               </a>
               <div className="flex md:order-2 text-heliotrope">
-            <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center button justify-center bg-white py-2 px-4 rounded-lg gap-2" aria-controls="navbar-sticky" aria-expanded="false">
-              <Image height="20" width="20" src="/Images/direct.png" aria-hidden="true"  viewBox="0 0 17 14" alt="" />
-              Let&apos;s Talk
-              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
-            </button>
-          </div>
-              
+                <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center button justify-center bg-white py-2 px-4 rounded-lg gap-2" aria-controls="navbar-sticky" aria-expanded="false">
+                  <Image height="20" width="20" src="/Images/direct.png" aria-hidden="true" viewBox="0 0 17 14" alt="" />
+                  Let&apos;s Talk
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
+                </button>
+              </div>
+
             </div>
           </div>
         </div>
@@ -66,17 +66,17 @@ const Navbar = () => {
                 Contact
               </a>
               <div className="flex md:order-2 text-heliotrope">
-            <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center button justify-center bg-white py-2 px-4 rounded-lg gap-2" aria-controls="navbar-sticky" aria-expanded="false">
-              <Image height="20" width="20" src="/Images/direct.png" aria-hidden="true"  viewBox="0 0 17 14" alt="" />
-              Let&apos;s Talk
-              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
-            </button>
-          </div>
+                <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center button justify-center bg-white py-2 px-4 rounded-lg gap-2" aria-controls="navbar-sticky" aria-expanded="false">
+                  <Image height="20" width="20" src="/Images/direct.png" aria-hidden="true" viewBox="0 0 17 14" alt="" />
+                  Let&apos;s Talk
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
+                </button>
+              </div>
             </div>
           </div>
         )}
       </nav>
-      
+
     </>
   );
 };

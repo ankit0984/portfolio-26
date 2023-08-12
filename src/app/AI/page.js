@@ -3,7 +3,7 @@ import React from 'react';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const netflix = () => {
+export default function page() {
   return (
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
@@ -12,7 +12,7 @@ const netflix = () => {
           className='absolute z-1'
           layout='fill'
           objectFit='cover'
-          src="/Images/coffee.jpg"
+          src="/Images/AI.jpg"
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
@@ -35,7 +35,7 @@ const netflix = () => {
             management.
           </p>
           <a
-            href='https://dribbble.com/shots/22185741-Coffee-shop-mobile-application/'
+            href='https://dribbble.com/shots/22205016-AI-Generative-Mobile-App'
             target='_blank'
             rel='noreferrer'
           >
@@ -72,4 +72,3 @@ const netflix = () => {
   );
 };
 
-export default netflix;

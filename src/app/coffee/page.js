@@ -12,7 +12,7 @@ export default function page() {
           className='absolute z-1'
           layout='fill'
           objectFit='cover'
-          src="/Images/wine.png"
+          src="/Images/coffee.jpg"
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
@@ -35,7 +35,7 @@ export default function page() {
             management.
           </p>
           <a
-            href='https://dribbble.com/shots/8559390/attachments/834079?mode=media'
+            href='https://dribbble.com/shots/22185741-Coffee-shop-mobile-application/'
             target='_blank'
             rel='noreferrer'
           >

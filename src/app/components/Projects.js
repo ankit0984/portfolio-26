@@ -1,32 +1,21 @@
 "use client"
-
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
 import "swiper/components/navigation/navigation.min.css"
-
-
-
 // import Swiper core and required modules
 import SwiperCore, {
   Autoplay, Pagination, Navigation
 } from 'swiper/core';
-
-
 import ProjectItem from './ProjectItem'
 import './style.css'
 import Image from "next/image";
 import Contact from "./Contact";
-
-
-
 // install Swiper modules
 SwiperCore.use([Autoplay, Pagination, Navigation]);
-
 export default function Projects() {
   return (
     <>
@@ -39,22 +28,22 @@ export default function Projects() {
           <div className='max-w-[1240px] mx-auto px-2 py-16'>
             <div className='grid md:grid-cols-2 gap-8'>
               <ProjectItem
-                title='Yoga App UI'
-                backgroundImg="/Images/yoga-app.png"
-                projectUrl='/podcast'
+                title='AI-Genrative-Design App UI'
+                backgroundImg="/Images/AI.jpg"
+                projectUrl='/AI'
                 tech='Adobe XD'
               />
               <ProjectItem
-                title='Furniture web UI'
-                backgroundImg="/Images/furniture.png"
-                projectUrl='/furniture'
+                title='Healthcare web UI'
+                backgroundImg="/Images/AI-healtthcare.jpg"
+                projectUrl='/health'
                 tech='Adobe XD'
               />
 
               <ProjectItem
                 title='Coffee App UI'
                 backgroundImg="/Images/coffee.jpg"
-                projectUrl='/android'
+                projectUrl='/coffee'
                 tech='Adobe XD'
               />
 
@@ -79,7 +68,6 @@ export default function Projects() {
                   <span className='mr-2 text-2xl'>Contact Me</span>
                   <Image src="/Images/direct.png" height="20" width="20" className=' items-end' alt="" />
                 </button>
-
               </div>
 
               <div className="">
@@ -107,7 +95,7 @@ export default function Projects() {
           "clickable": true
         }} navigation={false} className="mySwiper">
           <SwiperSlide>
-            &quot;Working with Deva was an absolute pleasure!
+            &quot;Working with Aditya Dev was an absolute pleasure!
             Their innovative designs and user-centric approach transformed our product,
             resulting in a seamless and engaging user experience. Their attention to detail
             and ability to understand our brand&apos;s essence truly impressed us. Highly recommend!&quot;

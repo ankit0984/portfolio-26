@@ -1,6 +1,9 @@
+"use client"
 import Image from 'next/image'
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Hero() {
+  
   return (
     <>
     <div>
@@ -14,11 +17,12 @@ export default function Hero() {
               <span className='text-6xl font-bold'>I&apos;m </span>
               <span className='text-6xl font-bold text-[#5651e5]'>Aditya Dev</span>
             </p>
-            <p className='py-1'>
-              <span className='text-6xl font-bold text-[#5651e5]'>a </span>
-              <span className='text-6xl font-bold '>UI/UX Designer</span>
-            </p>
-            <p className='py-4 text-3xl text-gray-600'>
+            
+              <TypeAnimation cursor={true} sequence={['a UI/UX Designer', 900,
+             'a UI/UX Developer', 900, 'a UI/UX Designer', 900, 'a UI/UX Developer', 900]}
+             wrapper='p' className='font-bold text-6xl bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text overflow-y-clip py-2'/>
+            
+            <p className='py-3 text-3xl text-gray-600'>
               High-level experience in UI/UX Designing with the latest technologies and designing knowledge, producing quality work.
             </p>
             <div className='items-center text-heliotropep py-2'>
