@@ -62,7 +62,7 @@ const Navbar = () => {
               <a href="/about" className="text-black block px-3 py-2 rounded-md text-base font-medium">
                 Projects
               </a>
-              <a href="/contact" className="text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+              <a href="/#contact" className="text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
                 Contact
               </a>
               <div className="flex md:order-2 text-heliotrope">
