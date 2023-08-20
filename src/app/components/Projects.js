@@ -78,7 +78,7 @@ export default function Projects() {
         {/** slider */}
         <div className="carousel w-full">
           <div id="slide1" className="carousel-item relative w-full">
-            <p>&quot;We are incredibly grateful to Deva for revamping our product&apos;s interface.
+            <p className=''>&quot;We are incredibly grateful to Deva for revamping our product&apos;s interface.
             Their exceptional eye for design, coupled with a deep understanding of user behavior, made a
             significant impact on our conversion rates. Their designs strike the perfect balance between
             aesthetics and functionality. Highly commendable work!&quot;</p>
