@@ -1,0 +1,6 @@
+.rotation{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    
+}

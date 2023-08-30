@@ -1,9 +1,10 @@
 "use client"
-
+import Testimonial from './Testimonial'
 import ProjectItem from './ProjectItem'
 import './style.css'
 import Image from "next/image";
 import Contact from "./Contact";
+import Demoproject from './Demoproject';
 export default function Projects() {
   return (
     <>
@@ -12,38 +13,7 @@ export default function Projects() {
           <h1 className="container text-center px-12 mx-auto text-4xl font-bold mt-6 text-black">My Recent Projects</h1>
           <h2 className='px-12 mx-auto py-4 text-md'>What I&apos;ve Built</h2>
         </div>
-        <div className='w-full'>
-          <div className='max-w-[1240px] mx-auto px-2 py-16'>
-            <div className='grid md:grid-cols-2 gap-8'>
-              <ProjectItem
-                title='AI-Genrative-Design App UI'
-                backgroundImg="/Images/AI.jpg"
-                projectUrl='/AI'
-                tech='Adobe XD'
-              />
-              <ProjectItem
-                title='Healthcare web UI'
-                backgroundImg="/Images/AI-healtthcare.jpg"
-                projectUrl='/health'
-                tech='Adobe XD'
-              />
-
-              <ProjectItem
-                title='Coffee App UI'
-                backgroundImg="/Images/coffee.jpg"
-                projectUrl='/coffee'
-                tech='Adobe XD'
-              />
-
-              <ProjectItem
-                title='Wine Liquor web UI'
-                backgroundImg="/Images/wine.png"
-                projectUrl='/wine'
-                tech='Adobe XD'
-              />
-            </div>
-          </div>
-        </div>
+        <Demoproject />
         {/* card for resume */}
         <div className='min-h-screen flex justify-center items-center'>
           <div className="flex justify-center items-center py-6">
@@ -76,39 +46,9 @@ export default function Projects() {
           </div>
         </div>
         {/** slider */}
-        <div className="carousel w-full">
-          <div id="slide1" className="carousel-item relative w-full">
-            <p className=''>&quot;We are incredibly grateful to Deva for revamping our product&apos;s interface.
-            Their exceptional eye for design, coupled with a deep understanding of user behavior, made a
-            significant impact on our conversion rates. Their designs strike the perfect balance between
-            aesthetics and functionality. Highly commendable work!&quot;</p>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide4" className="btn btn-circle">❮</a>
-              <a href="#slide2" className="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide2" className="carousel-item relative w-full">
-            <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" className="w-full" />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" className="btn btn-circle">❮</a>
-              <a href="#slide3" className="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide3" className="carousel-item relative w-full">
-            <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" className="w-full" />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide2" className="btn btn-circle">❮</a>
-              <a href="#slide4" className="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide4" className="carousel-item relative w-full">
-            <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" className="w-full" />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide3" className="btn btn-circle">❮</a>
-              <a href="#slide1" className="btn btn-circle">❯</a>
-            </div>
-          </div>
-        </div>
+        <div className="flex justify-center items-center">
+      <Testimonial />
+    </div>
 
         {/* end of card */}
         <Contact />

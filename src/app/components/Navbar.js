@@ -17,7 +17,7 @@ const Navbar = () => {
               <a to="/" className="text-black font-semibold">
                 <div>
                   <h1 className="ml-3 text-xl">Designerlive</h1>
-                  <h2 className="ml-10 px-12 text-regular">.tech</h2>
+                  <h2 className="ml-10 px-12 text-regular mt-0">.tech</h2>
                 </div>
               </a>
             </div>
@@ -56,13 +56,13 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <a href="/" className="text-black block px-3 py-2 rounded-md text-base font-medium">
+              <a href="#about" className="text-black block px-3 py-2 rounded-md text-base font-medium">
                 About
               </a>
-              <a href="/about" className="text-black block px-3 py-2 rounded-md text-base font-medium">
+              <a href="/projects" className="text-black block px-3 py-2 rounded-md text-base font-medium">
                 Projects
               </a>
-              <a href="/#contact" className="text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+              <a href="#contact" className="text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
                 Contact
               </a>
               <div className="flex md:order-2 text-heliotrope">

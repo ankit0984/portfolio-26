@@ -1,9 +1,8 @@
 import Footer from './Footer';
-import Image from 'next/image';
 export default function Contact() {
   return (
     <>
-      <div className="container mx-auto flex flex-col justify-center items-center h-screen">
+      <div id='contact' className="container mx-auto flex flex-col justify-center items-center h-screen">
         <h1 className="text-4xl font-bold mb-4 text-center">Contact Us</h1>
         <div className="flex w-full">
           <div className="w-1/2 p-6 mt-20 py-20">
@@ -19,13 +18,8 @@ export default function Contact() {
             <span className=" text-[#B968FF] font-bold">project</span>
             <span className=" text-black font-bold">.</span>
             </div>
-            <div className="container mx-auto border border-blue-500 flex items-center">
-      <div className="mr-4">
-        <Image src="/Images/email (3).png" alt="Image" width="30" height="30" />
-      </div>
-      <p className="text-lg">Your Text Here</p>
-    </div>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-12 rounded focus:outline-none focus:shadow-outline">
+            
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-16 mx-20 rounded focus:outline-none focus:shadow-outline mt-6">
               Mail Us
             </button>
           </div>
@@ -77,10 +71,7 @@ export default function Contact() {
       </div>
     </div>
   <Footer />
-  
   </>
-
-    
   );
 };
 
