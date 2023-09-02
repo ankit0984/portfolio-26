@@ -2,6 +2,10 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import './Nav.css'
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenuToggle = () => {
@@ -10,6 +14,11 @@ const Navbar = () => {
 
   return (
     <>
+     <motion.nav
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
       <nav className="bg-white">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
@@ -33,15 +42,15 @@ const Navbar = () => {
               </button>
             </div>
             <div className="hidden md:flex space-x-4">
-              <a href="/" className="text-black hover:bg-blue-300 px-3 py-2 rounded-md text-sm font-medium">
+              <Link href="/" className="text-black hover:bg-blue-300 px-3 py-2 rounded-md text-sm font-medium snap-y">
                 About
-              </a>
-              <a href="/about" className="text-black hover:bg-blue-300 px-3 py-2 rounded-md text-sm font-medium">
+              </Link>
+              <Link href="#projects" className="text-black hover:bg-blue-300 px-3 py-2 rounded-md text-sm font-medium">
                 Projects
-              </a>
-              <a href="/contact" className="text-black hover:bg-blue-300 px-3 py-2 rounded-md text-sm font-medium">
+              </Link>
+              <Link href="#contact" className="text-black hover:bg-blue-300 px-3 py-2 rounded-md text-sm font-medium">
                 Contact
-              </a>
+              </Link>
               <div className="flex md:order-2 text-heliotrope">
                 <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center button justify-center bg-white py-2 px-4 rounded-lg gap-2" aria-controls="navbar-sticky" aria-expanded="false">
                   <Image height="20" width="20" src="/Images/direct.png" aria-hidden="true" viewBox="0 0 17 14" alt="" />
@@ -49,22 +58,21 @@ const Navbar = () => {
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
                 </button>
               </div>
-
             </div>
           </div>
         </div>
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <a href="#about" className="text-black block px-3 py-2 rounded-md text-base font-medium">
+              <Link href="#about" className="text-black block px-3 py-2 rounded-md text-base font-medium">
                 About
-              </a>
-              <a href="/projects" className="text-black block px-3 py-2 rounded-md text-base font-medium">
+              </Link>
+              <Link href="#projects" className="text-black block px-3 py-2 rounded-md text-base font-medium">
                 Projects
-              </a>
-              <a href="#contact" className="text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+              </Link>
+              <Link href="#contact" className="text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
                 Contact
-              </a>
+              </Link>
               <div className="flex md:order-2 text-heliotrope">
                 <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center button justify-center bg-white py-2 px-4 rounded-lg gap-2" aria-controls="navbar-sticky" aria-expanded="false">
                   <Image height="20" width="20" src="/Images/direct.png" aria-hidden="true" viewBox="0 0 17 14" alt="" />
@@ -76,7 +84,7 @@ const Navbar = () => {
           </div>
         )}
       </nav>
-
+      </motion.nav>
     </>
   );
 };

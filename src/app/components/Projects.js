@@ -8,6 +8,7 @@ import Demoproject from './Demoproject';
 export default function Projects() {
   return (
     <>
+    
       <div id='projects' className='md:h-screen'>
         <div className=" mx-auto container flex flex-wrap justify-center">
           <h1 className="container text-center px-12 mx-auto text-4xl font-bold mt-6 text-black">My Recent Projects</h1>
